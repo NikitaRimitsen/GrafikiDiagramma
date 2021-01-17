@@ -80,3 +80,81 @@ values = [x[1] for x in data]
 labels = [x[0] for x in data]
 plt.pie(values,labels=labels,autopct="%.1f%%", radius=1.5)
 plt.show()
+
+
+
+
+x20 = np.arange(0, 9, 1)
+y20 = 2/27*x20**2-3
+x21 = np.arange(-10, 0, 1)
+y21 = 0.04*x21**2-3
+x22 = np.arange(-9, -3, 1)
+y22 = 2/9*(x22+6)**2+1
+x23 = np.arange(-3, 9, 1)
+y23 = -1/12*(x23-3)**2+6
+x24 = np.arange(5, 8, 1)
+y24 = 1/9*(x24-5)**2+2
+x25 = np.arange(5, 8, 1)
+y25 = 1/8*(x25-7)**2+1.5
+x26 = np.arange(-13, -9, 1)
+y26 = -0.75*(x26*11)**2+6
+x27 = np.arange(-15, -13, 1)
+y27 = -0.5*(x27+13)**2+3
+x28 = np.arange(-15, -10, 1)
+y28 = [1] * len(x28)
+x29 = np.arange(3, 4, 1)
+y29 = [3] * len(x29)
+
+
+plt.subplots()
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(axis="x", color="black", alpha=.3, linewidth=5, linestyle="")
+plt.xticks(np.arange(-50, 50, 2))
+plt.grid(True)
+plt.plot(x20,y20 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x21,y21 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x22,y22 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x23,y23 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x24,y24 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x25,y25 ,'-b',linewidth=1,label="Парабола")
+#plt.plot(x26,y26 ,'-r',linewidth=1,label="Парабола")
+plt.plot(x27,y27 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x28,y28 ,'-b',linewidth=1,label="Парабола")
+plt.plot(x29,y29 ,'-b',linewidth=1,label="Парабола")
+
+
+
+plt.savefig("my_image.png") 
+plt.show()
+
+x30 = np.arange(-12, 12, 1)
+y30 = -1/18*x30**2+12
+x31 = np.arange(-4, 4 ,1)
+y31 = -1/8*x31**2+6
+x32 = np.arange(-12, -4, 1)
+y32 = -1/8*(x32+8)**2+6
+x33 = np.arange(4, 12, 1)
+y33 = -1/8*(x33-8)**2+6
+x34 = np.arange(-4, -0.3, 1)
+y34 = 2*(x34+3)**2-9
+x35 = np.arange(-4, 0.2, 1)
+y35 = 1.5*(x35+3)**2-10
+
+
+plt.subplots()
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(axis="x", color="black", alpha=.3, linewidth=5, linestyle="")
+plt.xticks(np.arange(-50, 50, 2))
+plt.grid(True)
+plt.plot(x30,y30 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x31,y31 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x32,y32 ,'-r',linewidth=1,label="Парабола")
+plt.plot(x33,y33 ,'-r',linewidth=1,label="Парабола")
+plt.plot(x34,y34 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x35,y35 ,'-r',linewidth=1,label="Парабола")
+
+
+plt.savefig("my_image.png") 
+plt.show()
