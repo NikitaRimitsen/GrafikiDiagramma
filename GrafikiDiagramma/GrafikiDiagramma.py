@@ -61,7 +61,7 @@ plt.plot(x15,y15 ,'-r',linewidth=1,label="Парабола")
 
 plt.savefig("my_image.png") 
 plt.show()
-
+#----------------------------------------------------------------------------------------
 
 data = [
         ["Erinevate IKT turvameetodite kasutamine", 86],
@@ -81,7 +81,7 @@ labels = [x[0] for x in data]
 plt.pie(values,labels=labels,autopct="%.1f%%", radius=1.5)
 plt.show()
 
-
+#--------------------------------------------------------------------------------------------
 
 
 x20 = np.arange(0, 9, 1)
@@ -128,17 +128,19 @@ plt.plot(x29,y29 ,'-b',linewidth=1,label="Парабола")
 plt.savefig("my_image.png") 
 plt.show()
 
-x30 = np.arange(-12, 12, 1)
+#----------------------------------------------------------------------
+
+x30 = np.arange(-12, 13, 1)
 y30 = -1/18*x30**2+12
-x31 = np.arange(-4, 4 ,1)
+x31 = np.arange(-4, 5 ,1)
 y31 = -1/8*x31**2+6
-x32 = np.arange(-12, -4, 1)
+x32 = np.arange(-12, -3, 1)
 y32 = -1/8*(x32+8)**2+6
-x33 = np.arange(4, 12, 1)
+x33 = np.arange(4, 13, 1)
 y33 = -1/8*(x33-8)**2+6
-x34 = np.arange(-4, -0.3, 1)
+x34 = np.arange(-4, -0.1, 1)
 y34 = 2*(x34+3)**2-9
-x35 = np.arange(-4, 0.2, 1)
+x35 = np.arange(-4, 1, 1)
 y35 = 1.5*(x35+3)**2-10
 
 
@@ -158,3 +160,4 @@ plt.plot(x35,y35 ,'-r',linewidth=1,label="Парабола")
 
 plt.savefig("my_image.png") 
 plt.show()
+
