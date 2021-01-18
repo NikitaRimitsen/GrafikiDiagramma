@@ -161,3 +161,40 @@ plt.plot(x35,y35 ,'-r',linewidth=1,label="Парабола")
 plt.savefig("my_image.png") 
 plt.show()
 
+#------------------------------------
+
+
+x1 = np.arange(-9, 0, 1)
+y1 = -1/16*(x1+5)**2+2
+x2 = np.arange(1, 10, 1)
+y2 = -1/16*(x2-5)**2+2
+x3 = np.arange(-9, 0, 1)
+y3 = 1/4*(x3+5)**2-3
+x4 = np.arange(1, 10, 1)
+y4 = 1/4*(x4-5)**2-3
+x5 = np.arange(-9, -5, 1)
+y5 = -(x5+7)**2+5
+x6 = np.arange(6, 10, 1)
+y6 = -(x6-7)**2+5
+x7 = np.arange(-1, 2, 1)
+y7 = -0.5*(x7**2)+1.5
+
+
+
+plt.subplots()
+plt.xlabel("x")
+plt.ylabel("y")
+#plt.tick_params(axis="x", direction="in",length=10, width=0,color="red",labelsize=10, labelrotation=0)
+plt.grid(axis="x", color="black", alpha=.3, linewidth=5, linestyle="")
+plt.xticks(np.arange(-50, 50, 2))
+plt.grid(True)
+plt.plot(x1,y1 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x2,y2 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x3,y3 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x4,y4 ,'-g',linewidth=1,label="Парабола")
+plt.plot(x5,y5 ,'-y',linewidth=1,label="Парабола")
+plt.plot(x6,y6 ,'-y',linewidth=1,label="Парабола")
+plt.plot(x7,y7 ,'-r',linewidth=1,label="Парабола")
+
+plt.savefig("my_image.png") 
+plt.show()
